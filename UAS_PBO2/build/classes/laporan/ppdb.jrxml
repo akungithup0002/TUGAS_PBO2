@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6dec455-4691-461d-9b15-85ab8d7028a3">
+	<property name="ireport.zoom" value="2.3579476910000037"/>
+	<property name="ireport.x" value="963"/>
+	<property name="ireport.y" value="144"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM ppdb]]>
+	</queryString>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIK" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tempat Tanggal Lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jenis Kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Asal Sekolah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="No HP" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Jurusan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama Orang Tua/Wali" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5b0f53d7-12d2-4a2a-853d-75ca4433b41a" x="286" y="26" width="263" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENERIMAAN SISWA BARU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3f510373-9c36-4a13-b42a-197154966955" x="0" y="24" width="85" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c55183c-a8df-4402-9344-676f17669b79" x="89" y="24" width="82" height="31"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="faa4791b-bb2b-4678-a389-449d4a395436" x="274" y="24" width="59" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Jenis Kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a9d6d1ca-5849-41ee-a7a7-53fafba46a9f" x="337" y="24" width="141" height="31"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Asal Sekolah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c655777a-7473-4e50-b785-3894bd17b657" x="176" y="24" width="95" height="31"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Tempat Tanggal Lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c2557a4b-c83e-44cc-9180-ea3fe8d0e6b5" x="482" y="24" width="65" height="31"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Jurusan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4827523e-a285-48ab-b050-8dd839d83899" x="552" y="0" width="57" height="23"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Nama Orang Tua/Wali]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a69b849c-15f3-457e-b9f2-3b9e3041077f" x="551" y="23" width="59" height="32"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama Orang Tua/Wali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f5d2e7a2-1b96-4202-925f-6bc17838ecee" x="617" y="23" width="84" height="32"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1a7485d8-fc31-441a-8c5b-12c6553d4935" x="705" y="23" width="97" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{No HP}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d93dc800-ac6e-4a5c-9347-d0e0a40b180d" x="617" y="0" width="84" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="482" y="0" width="65" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Jurusan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="95dd95b6-c96a-4e91-9595-9b45e8195b1e" x="705" y="0" width="97" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[NO Hp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="337" y="1" width="141" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Asal Sekolaj]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="274" y="1" width="59" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="176" y="1" width="95" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Tempat Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="89" y="0" width="82" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c752427-b71e-4486-a97f-a925d620c5eb" x="0" y="0" width="59" height="14"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="59" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
